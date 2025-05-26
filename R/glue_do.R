@@ -1,4 +1,10 @@
-library(glue)
+#' @importFrom logger log_debug log_info log_warn log_error log_level log_threshold log_appender log_formatter log_layout log_formatters_logfmt loggers
+
+require(glue)
+
+
+
+
 
 #' Glue Wrapper Functions
 #'
@@ -78,3 +84,4 @@ glue_write <- function(.x, file, ..., .envir = parent.frame(), .func = writeLine
   on.exit(close(con), add = TRUE)
   glue_do(.x, ..., .envir = .envir, .func = function(output) .func(output, con))
 }
+

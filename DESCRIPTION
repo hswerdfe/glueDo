@@ -9,10 +9,12 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Wrapper functions around glue
+Description: Wrapper functions around the glue library.
 License: MIT + file LICENSE 
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
 Imports:
-    glue
+    glue (>= 1.8.0)
+Depends:
+    R (>= 4.3.0)

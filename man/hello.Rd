@@ -12,7 +12,3 @@ nothing
 \description{
 hello
 }
-\examples{
- hello()
-
-}
