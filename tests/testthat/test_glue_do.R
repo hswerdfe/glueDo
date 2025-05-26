@@ -7,7 +7,7 @@ test_func <- function(x) x
 test_that("glue_do works with print function", {
   text <- "HELLO {data}!"
   data <- "world"
-  expect_output(glue_do(text, .func = test_func), "HELLO world!")
+  expect_equal(glue_do(text, .func = test_func), "HELLO world!")
 })
 
 test_that("glue_stop throws an error correctly", {
