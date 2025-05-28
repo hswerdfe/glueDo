@@ -1,15 +1,15 @@
 Package: glueDo
 Type: Package
-Title: Glue library wrapper (Title Case)
+Title: Wrapper Functions for the 'glue' Library
 Version: 0.1.0
 Authors@R: c(
     person(
       "Howard", "Swerdfeger",
-      email = "none@example.com",
+      email = "hswerdfe@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: Wrapper functions around the glue library.
+Description: Provides convenient wrapper functions around the 'glue' library for common string interpolation tasks. The package simplifies the process of combining 'glue' string templating with common R functions like message(), warning(), stop(), print(), cat(), and file writing operations. Instead of manually calling glue() and then passing the result to these functions, 'glueDo' provides direct wrapper functions that handle both steps in a single call. This is particularly useful for logging, error handling, and formatted output in R scripts and packages. The main reference for the underlying 'glue' package is Hester and Bryan (2022) <https://CRAN.R-project.org/package=glue>.
 License: MIT + file LICENSE 
 Encoding: UTF-8
 LazyData: true
